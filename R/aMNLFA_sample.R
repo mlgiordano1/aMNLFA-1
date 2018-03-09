@@ -20,7 +20,6 @@ aMNLFA.sample<-function(input.object){
   myauxiliary = input.object$auxiliary
   myID = input.object$ID
 
-  mrdata<-read.table(paste(path,"/mr.dat",sep=""), header=TRUE,as.is = TRUE)
   varlist<-c(myID,myauxiliary,myindicators,myMeasInvar,myMeanImpact,myVarImpact)
   
   varlist<-unique(varlist)
